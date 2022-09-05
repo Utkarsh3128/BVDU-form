@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/909712bb94.js" crossorigin="anonymous"></script>
+    <title>Form</title>
+
+    <style>
+        body {
+            background-image: url("images/white-background2.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 1200px;
+        }
+
+        div h1:hover {
+            color: red;
+        }
+
+        .header {
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        div p.red {
+            color: rgb(231, 1, 1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 900px;
+            padding-left: 20px;
+            border: 2px solid rgb(189, 182, 182);
+            /* margin: 50px 50px 0px 50px; */
+            margin-left: auto;
+            margin-right: auto;
+            padding: 50px 0px 60px 70px;
+            /* padding: 20px; */
+        }
+
+        div.container p {
+            float: right;
+        }
+
+        .pic {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .img {
+            width: 140px;
+            height: 140px;
+        }
+
+        #form {
+            justify-content: center;
+            margin: auto;
+        }
+
+        .navbar {
+            float: right;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            align-items: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: rgb(0, 0, 0);
+            background-color: white;
+            text-decoration: none;
+            border: 1px solid white;
+            padding: 10px;
+            border-radius: 20px;
+        }
+
+        .search {
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        li a:hover {
+            background-color: pink;
+        }
+
+        .contact {
+            float: right;
+            margin-top: 10px;
+        }
+
+        .input {
+            height: 9px;
+            padding: 6px 12px;
+            display: block;
+            width: 20%;
+        }
+
+        input:focus {
+            background-color: yellow;
+        }
+
+        .foot {
+            margin-left: 20px;
+            /* text-align: justify; */
+            width: 140%;
+            height: 100%;
+            display: inline-block;
+            overflow-x: hidden;
+            /* background-color: rgb(156, 154, 154); */
+        }
+
+        .box {
+            background-color: #f4f9fc;
+            border: 1px solid #f4f9fc;
+            display: inline-block;
+            margin: 50px;
+            padding: 20px;
+            width: 30%;
+            box-sizing: border-box;
+        }
+
+        .photo {
+            display: inline-block;
+        }
+
+        .man {
+            border: 1px solid #f4f9fc;
+            /* border-radius: 120px; */
+            width: 120px;
+            height: 120px;
+            border-radius: 131px;
+            background: #e0e0e0;
+            box-shadow: 20px 20px 39px #606060,
+                -20px -20px 39px #ffffff;
+        }
+
+        .text1 {
+            display: inline-block;
+            /* padding-left: 20px; */
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1200px;
+            padding: 70px 21%;
+            background: #b0b3b8;
+            color: rgb(0, 0, 0);
+        }
+
+        .footer div {
+            text-align: center;
+        }
+
+        .footer div h3 {
+            font-weight: 300;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        .col-1 a {
+            display: block;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            margin-top: 10px;
+        }
+
+        .col-2 {
+            flex-grow: 1;
+            text-align: justify;
+        }
+
+        .social a {
+            color: white;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="pic">
+        <img src="images/bharati.png" alt="college" class="img">
+    </div>
+    <div class="header">
+        <h1>BHARATI VIDYAPEETH</h1>
+        <p class="red">(DEEMED TO BE UNIVERSITY)</p>
+        <p><b>Established u/s 3 of UGC Act, 1956 vide Notification</b></p>
+    </div>
+
+    <div class="contact">
+        <p><b>'A+' Accreditation (Third Cycle) by 'NAAC' in 2017</b></p>
+        <p><b>Category-I Deemed to be University Grade by UGC</b></p>
+        <p><b> 63rd Rank among Universities by NIRF-2020</b></p>
+    </div>
+    <h1><u>Application Form</u></h1>
+    <div class="container">
+        <form id="form">
+            <label for="name">Full Name:</label><br>
+            <input type="text" name="name" id="name" class="input"><br>
+            <label for="roll">Roll No.</label><br>
+            <input type="number" name="rollNo" id="roll" class="input"><br>
+            <label for="marks">PRN</label><br>
+            <input type="text" name="marks" id="marks" class="input"><br>
+            <label for="dob">D.O.B</label><br>
+            <input type="date" name="dob" id="dob" class="input"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" class="input"><br><br>
+
+            <label for="man"><b>Gender: </b>Male</label>
+            <input type="radio" name="gender" id="man" value="Male">
+            <label for="woman">Female</label>
+            <input type="radio" name="gender" id="woman" value="Female"><br><br>
+            <label for="sem">Semester:</label>
+            <select name="sem" id="sem">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select><br><br>
+            <label for="branch">Branch: </label>
+            <select name="branch" id="branch">
+                <option value="cse">Computer Science and Engineering</option>
+                <option value="it">Information Technology</option>
+                <option value="civil">Civil Engineering</option>
+            </select><br><br>
+
+            <label for="submit">Click Here to Submit </label>
+            <input type="submit" id="submit">
+        </form>
+    </div>
+
+    <div class="foot">
+        <div class="box">
+            <h2 style="color: #006694;">Our Founder</h2>
+            <div class="photo">
+                <img src="images/our_chancellor_bvdu.jpg" alt="man" class="man">
+            </div>
+            <div class="text1">
+                <h4>Dr. Patangrao Kadam came from a middle level farmer's family in a small village of Sangli District
+                    in Maharashtra. He was the first person from his village to have passed the S.S.C, examination.After
+                    S.S.C., he joined Shivaji College at Satara, run by Rayat Shikshan Sanstha, which was established by
+                    a renowned social reformer and educationist, Karmaveer Bhaurao Patil. He was enrolled in the College
+                    under its "earn and learn scheme". It is here that fine qualities of head and heart, which he is now
+                    known for, took root in him. He took lessons of dedicated social service at the feet of Karmaveer
+                    Bhaurao Patil. <br>
+                    Dr. Kadam came to Pune in 1961, where he completed one year Diploma Course in teaching and in 1962,
+                    started working as a part time teacher in a secondary school in Pune run by Rayat Shikshan Sanstha.
+                    Dr. Kadam obtained a Bachelor's Degree in Law and Master's degree from the University of Pune.
+                    Despite his pre-occupation with educational, social and political activities, Dr. Kadam completed
+                    his research on the theme "Administrative Problems of Educational Administration in 80s" for which
+                    he was awarded a Ph.D. in Management by the University of Pune.<br>
+                    Dr. Kadam established Bharati Vidyapeeth in 1964 when he was hardly 20 years old. From the
+                    beginning, his vision was to develop Bharati Vidyapeeth as a distinct educational institution. His
+                    vision and ambitions are reflected in the constitution, which was submitted to the Charity
+                    Commissioner at the time of registration of Bharati Vidyapeeth as a Trust, wherein he had included
+                    "to establish our own University", as one of the objectives of Bharati Vidyapeeth. <br>
+                    He cherished this ambition and visualized this possibility at a time </h4>
+            </div>
+        </div>
+        <div class="box">
+            <h2 style="color: #006694;">About us</h2>
+            <div class="text2">
+                <h4>The institutions of Bharati Vidyapeeth (BV) was accorded deemed university status in 1996 for its
+                    academic excellence. The Bharati Vidyapeeth (Deemed to be University)
+                    <ul>
+                        <li>has established academic excellence and offers programmes in innovative and emerging areas,
+                        </li>
+                        <li>presently has 29 constituent institutions, including three research institutes dedicated
+                            exclusively to research,</li>
+                        <li>is multi-campus and multi-disciplinary and is catering to the needs of Urban and Rural
+                            students,</li>
+                        <li>has significant achievements in research,</li>
+                        <li>has world-class infrastructure and facilities, launched several innovative academic
+                            programmes, best teaching-learning processes and has entered into national, as well as,
+                            international collaborations.</li>
+                    </ul>
+                    Bharati Vidyapeeth (Deemed to be University) as an educational organization has committed itself
+                    to<br>
+                    <ul>
+                        <li>make available quality education in different areas of knowledge to the students as per
+                            their choices and inclinations</li>
+                        <li>create an ambience with enriched infrastructure and academic facilities in its campuses
+                            conducive for academic pursuits</li>
+                        <li>bring education within the reach of rural and girl students by providing them substantive
+                            fee concessions and subsidized hostel and mess facilities</li>
+                        <li>nurture students not only to be competent professionals but also responsible citizens and
+                            noble minded human beings</li>
+                        <li>world-class medical education with super-specialty hospitals and services at affordable cost
+                        </li>
+                    </ul>
+                    The functioning of all the constituent units of BVU is designed and geared up towards the
+                    fulfillment of these commitments.
+                </h4>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="col-1">
+            <h3>Useful Links</h3>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About us</a>
+        </div>
+        <div class="col-2">
+            <h3>Address</h3>
+            <p>Bharati Vidyapeeth Deemed to be University
+                <br>
+                Dhankawadi, Pune-Satara Road Pune
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
